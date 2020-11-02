@@ -1,14 +1,20 @@
 @import url("../fonts/fonts.css");
 
-$site-width: 1920px;
+$container-width: 1920px;
+$container_mini-width: 1230px;
 
 body {
     margin: 0;
 }
 
 .container {
-    width: $site-width;
+    width: $container-width;
     margin: 0 auto;
+
+    &_mini {
+        width: $container_mini-width;
+        margin: 0 auto;
+    }
 }
 
 .header {
@@ -22,11 +28,9 @@ body {
     padding: 40px;
 
     &_top {
-        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 1170px;
 
         &_logo {
             text-decoration: none;
@@ -248,8 +252,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 80px 380px;
+    padding: 80px 0;
     box-sizing: border-box;
         
     &_card {
@@ -316,7 +319,7 @@ body {
 }
 
 .realization {
-    padding: 80px 350px 0;
+    padding: 80px 0 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -341,5 +344,75 @@ body {
         text-align: center;
     }
 
-    &_img {}
+    &_img {
+        min-height: 480px;
+        width: $container_mini-width;
+        background-image: url(../img/realization.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.multipurpose {
+    background-color: #f4f5f8;
+    background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+    box-sizing: border-box;
+    padding: 50px 0;
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_info {
+        margin-left: 30px;
+
+        &_heading {
+            font-family: 'raleway';
+            font-size: 28px;
+            line-height: 20px;
+            font-weight: 400;
+            text-transform: capitalize;
+            color: #ffffff;
+
+            & span {
+                color: #c7b299;
+            }
+        }
+
+        &_txt {
+            margin: 8px 0 0;
+            font-family: 'montserrat';
+            font-size: 18px;
+            line-height: 20px;
+            font-weight: 300;
+            color: #615855;
+        }
+    }
+
+    &_btn {
+        width: 170px;
+        min-height: 50px;
+        margin-right: 30px;
+        padding: 0;
+        font-family: 'raleway';
+        font-size: 14px;
+        line-height: 50px;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-align: center;
+        color: #ffffff;
+        border: none;
+        outline: none;
+        background-color: #998675;
+        border-radius: 3px;
+
+        &:hover {
+            opacity: 0.5;
+        }
+
+        &:active {
+            opacity: 1;
+        }
+    }
 }
