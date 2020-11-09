@@ -575,6 +575,16 @@ body {
   margin: 0;
 }
 
+.latest_nav_label:hover {
+  background-color: #998675;
+  color: #ffffff;
+}
+
+.latest_nav_label:active {
+  color: #8c8c8c;
+  background-color: #ffffff;
+}
+
 .latest_nav_radio {
   display: none;
 }
