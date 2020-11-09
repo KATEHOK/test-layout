@@ -731,3 +731,59 @@ body {
         }
     }
 }
+
+.formobile {
+    display: flex;
+    justify-content: space-around;
+
+    &_img {
+        margin-top: 80px;
+        align-self: flex-end;
+    }
+
+    &_wrapper {
+        width: 660px;
+        align-self: center;
+
+        &_heading {
+            margin: 0;
+            font-family: 'raleway';
+            font-size: 30px;
+            line-height: 1.2;
+            font-weight: 600;
+            color: #555555;
+        }
+
+        &_txt {
+            margin: 40px 0 45px;
+            font-family: 'montserrat';
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 300;
+            color: #8c8c8c;
+        }
+
+        &_list {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            font-family: 'montserrat';
+            font-size: 16px;
+            line-height: 32px;
+            font-weight: 300;
+            color: #8c8c8c;
+
+            &_item {
+                box-sizing: border-box;
+                padding-left: 50px;
+                display: flex;
+                align-items: center;
+
+                &_svg {
+                    fill: #c7b299;
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}
