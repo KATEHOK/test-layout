@@ -28,6 +28,13 @@
 
 @font-face {
 	font-family: 'montserrat';
+	src: url('../fonts/montserrat/extralight.ttf');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'montserrat';
 	src: url('../fonts/montserrat/light.ttf');
 	font-weight: 300;
 	font-style: normal;
