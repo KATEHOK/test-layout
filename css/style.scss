@@ -1076,3 +1076,28 @@ body {
         }
     }
 }
+
+.partners {
+    background-image: url(../img/partners_bg.png);
+    min-height: 489px;
+    display: flex;
+    
+    &_wrapper {
+        align-self: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &_partner {
+            transition: transform 150ms ease-out;
+    
+            &:hover {
+                transform: scale(1.2);
+            }
+    
+            &:active {
+                transform: none;
+            }
+        }
+    }
+}
