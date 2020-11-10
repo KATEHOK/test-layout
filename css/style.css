@@ -1357,4 +1357,241 @@ body {
   -webkit-transform: none;
           transform: none;
 }
+
+.footer_top {
+  background-color: #191919;
+}
+
+.footer_top_cards {
+  padding: 80px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer_top_cards_card {
+  width: 270px;
+}
+
+.footer_top_cards_card_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  fill: #ffffff;
+  color: #ffffff;
+  font-family: 'raleway';
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  -webkit-transition: fill 150ms ease-out, color 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: fill 150ms ease-out, color 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: fill 150ms ease-out, color 150ms ease-out, transform 150ms ease-out;
+  transition: fill 150ms ease-out, color 150ms ease-out, transform 150ms ease-out, -webkit-transform 150ms ease-out;
+}
+
+.footer_top_cards_card_logo:hover {
+  fill: #c7b299;
+  color: #c7b299;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.footer_top_cards_card_logo:active {
+  fill: #ffffff;
+  color: #ffffff;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.footer_top_cards_card_txt {
+  margin: 30px 0;
+  font-family: 'montserrat';
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #555555;
+}
+
+.footer_top_cards_card_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: 'montserrat';
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #d1d1d1;
+  fill: #d1d1d1;
+}
+
+.footer_top_cards_card_link_txt {
+  margin-right: 10px;
+  -webkit-transition: color 150ms ease-out, fill 150ms ease-out, margin-right 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: color 150ms ease-out, fill 150ms ease-out, margin-right 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: color 150ms ease-out, fill 150ms ease-out, transform 150ms ease-out, margin-right 150ms ease-out;
+  transition: color 150ms ease-out, fill 150ms ease-out, transform 150ms ease-out, margin-right 150ms ease-out, -webkit-transform 150ms ease-out;
+}
+
+.footer_top_cards_card_link_svg {
+  -webkit-transition: color 150ms ease-out, fill 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: color 150ms ease-out, fill 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: color 150ms ease-out, fill 150ms ease-out, transform 150ms ease-out;
+  transition: color 150ms ease-out, fill 150ms ease-out, transform 150ms ease-out, -webkit-transform 150ms ease-out;
+}
+
+.footer_top_cards_card_link:hover .footer_top_cards_card_link_txt {
+  color: #c7b299;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  margin-right: 20px;
+}
+
+.footer_top_cards_card_link:hover .footer_top_cards_card_link_svg {
+  fill: #c7b299;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.footer_top_cards_card_link:active .footer_top_cards_card_link_txt {
+  color: #d1d1d1;
+  -webkit-transform: none;
+          transform: none;
+  margin-right: 10px;
+}
+
+.footer_top_cards_card_link:active .footer_top_cards_card_link_svg {
+  fill: #d1d1d1;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.footer_top_cards_card_heading {
+  font-family: 'raleway';
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.footer_top_cards_card_first_date, .footer_top_cards_card_second_date, .footer_top_cards_card_third_date {
+  display: block;
+  font-family: 'montserrat';
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #363636;
+  -webkit-transition: color 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: color 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: color 150ms ease-out, transform 150ms ease-out;
+  transition: color 150ms ease-out, transform 150ms ease-out, -webkit-transform 150ms ease-out;
+}
+
+.footer_top_cards_card_first_txt, .footer_top_cards_card_second_txt, .footer_top_cards_card_third_txt {
+  margin: 10px 0 0;
+  font-family: 'montserrat';
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #555555;
+  -webkit-transition: color 150ms ease-out;
+  transition: color 150ms ease-out;
+}
+
+.footer_top_cards_card_first_text, .footer_top_cards_card_second_text, .footer_top_cards_card_third_text {
+  margin: 12px 0 0;
+  font-family: 'montserrat';
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #555555;
+  -webkit-transition: color 150ms ease-out;
+  transition: color 150ms ease-out;
+}
+
+.footer_top_cards_card_first_text span, .footer_top_cards_card_second_text span, .footer_top_cards_card_third_text span {
+  color: #00bff3;
+}
+
+.footer_top_cards_card_first_text a, .footer_top_cards_card_second_text a, .footer_top_cards_card_third_text a {
+  font-family: 'montserrat';
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #959595;
+  text-decoration: none;
+  -webkit-transition: color 150ms ease-out;
+  transition: color 150ms ease-out;
+}
+
+.footer_top_cards_card_first:hover .footer_top_cards_card_first_date,
+.footer_top_cards_card_first:hover a, .footer_top_cards_card_second:hover .footer_top_cards_card_first_date,
+.footer_top_cards_card_second:hover a, .footer_top_cards_card_third:hover .footer_top_cards_card_first_date,
+.footer_top_cards_card_third:hover a, .footer_top_cards_card_first:hover .footer_top_cards_card_second_date, .footer_top_cards_card_second:hover .footer_top_cards_card_second_date, .footer_top_cards_card_third:hover .footer_top_cards_card_second_date, .footer_top_cards_card_first:hover .footer_top_cards_card_third_date, .footer_top_cards_card_second:hover .footer_top_cards_card_third_date, .footer_top_cards_card_third:hover .footer_top_cards_card_third_date {
+  color: #ffffff;
+}
+
+.footer_top_cards_card_first:hover .footer_top_cards_card_first_txt,
+.footer_top_cards_card_first:hover .footer_top_cards_card_first_text, .footer_top_cards_card_second:hover .footer_top_cards_card_first_txt,
+.footer_top_cards_card_second:hover .footer_top_cards_card_first_text, .footer_top_cards_card_third:hover .footer_top_cards_card_first_txt,
+.footer_top_cards_card_third:hover .footer_top_cards_card_first_text, .footer_top_cards_card_first:hover .footer_top_cards_card_second_txt,
+.footer_top_cards_card_first:hover .footer_top_cards_card_second_text, .footer_top_cards_card_second:hover .footer_top_cards_card_second_txt,
+.footer_top_cards_card_second:hover .footer_top_cards_card_second_text, .footer_top_cards_card_third:hover .footer_top_cards_card_second_txt,
+.footer_top_cards_card_third:hover .footer_top_cards_card_second_text, .footer_top_cards_card_first:hover .footer_top_cards_card_third_txt,
+.footer_top_cards_card_first:hover .footer_top_cards_card_third_text, .footer_top_cards_card_second:hover .footer_top_cards_card_third_txt,
+.footer_top_cards_card_second:hover .footer_top_cards_card_third_text, .footer_top_cards_card_third:hover .footer_top_cards_card_third_txt,
+.footer_top_cards_card_third:hover .footer_top_cards_card_third_text {
+  color: #c7b299;
+}
+
+.footer_top_cards_card_first::after, .footer_top_cards_card_second::after {
+  content: '';
+  margin: 20px 0;
+  display: block;
+  width: 270px;
+  height: 2px;
+  background-color: #252525;
+}
+
+.footer_top_cards_card_imges {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer_top_cards_card_imges_img {
+  -webkit-transition: -webkit-transform 150ms ease-out;
+  transition: -webkit-transform 150ms ease-out;
+  transition: transform 150ms ease-out;
+  transition: transform 150ms ease-out, -webkit-transform 150ms ease-out;
+}
+
+.footer_top_cards_card_imges_img:nth-child(1), .footer_top_cards_card_imges_img:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.footer_top_cards_card_imges_img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
 /*# sourceMappingURL=style.css.map */

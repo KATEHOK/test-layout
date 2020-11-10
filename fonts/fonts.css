@@ -21,6 +21,13 @@
 
 @font-face {
 	font-family: 'raleway';
+	src: url('../fonts/raleway/bold.ttf');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'raleway';
 	src: url('../fonts/raleway/extrabold.ttf');
 	font-weight: 800;
 	font-style: normal;
