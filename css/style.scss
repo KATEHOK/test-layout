@@ -1304,7 +1304,40 @@ body {
     }
 
     &_bottom {
+        background-color: #111111;
 
-        &_wrapper {}
+        &_wrapper {
+            padding: 45px 0 52px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+
+            &_txt {
+                margin: 0;
+                font-family: 'montserrat';
+                font-size: 13px;
+                line-height: 20px;
+                font-weight: 300;
+                color: #555555;
+
+                & a {
+                    text-decoration: none;
+                    color: #959595;
+                    transition: color 150ms ease-out;
+
+                    &:hover {
+                        color: #c7b299;
+                    }
+
+                    &:active {
+                        color: #555555;
+                    }
+                }
+
+                & span {
+                    color: #252525;
+                }
+            }
+        }
     }
 }
