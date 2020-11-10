@@ -36,22 +36,27 @@ body {
             text-decoration: none;
             display: flex;
             align-items: center;
-            color: white;
             fill: white;
+            color: white;
             font-family: 'raleway';
             font-size: 34px;
             line-height: 1.2;
             font-weight: 400;
             letter-spacing: -0.04em;
+            transition: color 150ms ease-out,
+                        fill 150ms ease-out,
+                        transform  150ms ease-out;
 
             &:hover {
                 color: #c7b299;
                 fill: #c7b299;
+                transform: scale(1.2);
             }
 
             &:active {
                 color: white;
                 fill: white;
+                transform: none;
             }
         }
 
@@ -74,13 +79,17 @@ body {
                     line-height: 1.2;
                     font-weight: 300;
                     color: #ffffff;
+                    transition: color 150ms ease-out,
+                                transform 150ms ease-out;
 
                     &:hover {
                         color: #c7b299;
+                        transform: scale(1.5);
                     }
 
                     &:active {
                         color: white;
+                        transform: none;
                     }
                 }
             }
@@ -97,13 +106,17 @@ body {
                     outline: none;
                     padding: 0;
                     background-color: rgba(0, 0, 0, 0);
+                    transition: fill 150ms ease-out,
+                                transform  150ms ease-out;
 
                     &:hover {
                         fill: #c7b299;
+                        transform: scale(1.5);
                     }
 
                     &:active {
                         fill: white;
+                        transform: none;
                     }
                 }
 
@@ -118,9 +131,11 @@ body {
                     font-size: 14px;
                     line-height: 1.2;
                     background-color: rgba(0, 0, 0, 0);
+                    transition: transform  150ms ease-out;
 
                     &:hover {
                         background-image: url(../img/icon_search-act.svg);
+                        transform: scale(1.5);
                     }
 
                     &:focus {
@@ -136,6 +151,7 @@ body {
                         background-image: url(../img/icon_search-act.svg);
                         border-radius: 10px;
                         padding: 0 10px;
+                        transform: none;
                     }
                 }
             }
@@ -161,13 +177,17 @@ body {
                 outline: none;
                 fill: #d3c1ad;
                 opacity: 0.5;
+                transition: opacity 150ms ease-out,
+                            transform  150ms ease-out;
 
                 &:hover {
                     opacity: 1;
+                    transform: scale(1.5);
                 }
 
                 &:active {
                     opacity: 0.5;
+                    transform: none;
                 }
             }
 
@@ -213,13 +233,14 @@ body {
                     width: 170px;
                     background-color: #998675;
                     border-radius: 3px;
+                    transition: transform  150ms ease-out;
 
                     &:hover {
-                        opacity: 0.5;
+                        transform: scale(1.5);
                     }
 
                     &:active {
-                        opacity: 1;
+                        transform: none;
                     }
                 }
             }
