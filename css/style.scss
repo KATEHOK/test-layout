@@ -898,3 +898,189 @@ body {
         }
     }
 }
+
+.recent {
+    padding: 80px;
+
+    &_heading {
+        margin: 0;
+        text-transform: capitalize;
+        font-family: 'raleway';
+        font-size: 30px;
+        line-height: 1.2;
+        font-weight: 600;
+        color: #555555;
+        text-align: center;
+    }
+
+    &_txt {
+        margin: 30px auto 40px;
+        width: 760px;
+        font-family: 'montserrat';
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 300;
+        color: #8c8c8c;
+        text-align: center;
+    }
+
+    &_cards {
+        display: flex;
+        justify-content: space-evenly;
+
+        &_card {
+            width: 370px;
+            transition: transform 150ms ease-out;
+
+            &_img {
+                display: block;
+            }
+
+            &:nth-child(2) &_img {
+                filter: brightness(200%);
+            }
+
+            &_wrapper {
+                padding: 30px;
+                box-sizing: border-box;
+                transition: background-color 150ms ease-out,
+                            color 150ms ease-out;
+
+                &_heading {
+                    margin: 0;
+                    font-family: 'raleway';
+                    font-size: 20px;
+                    line-height: 1.2;
+                    font-weight: 500;
+                    color: #555555;
+                }
+
+                &_txt {
+                    margin: 20px 0 30px;
+                    font-family: 'montserrat';
+                    font-size: 14px;
+                    line-height: 22px;
+                    font-weight: 300;
+                    color: #8c8c8c;
+                }
+
+                &_link {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    font-family: 'montserrat';
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 300;
+                    color: #c7b299;
+                    transition: color 150ms ease-out;
+
+                    &_txt {
+                        margin-right: 10px;
+                        transition: transform 150ms ease-out,
+                                    margin-right 150ms ease-out;
+                    }
+
+                    &_svg {
+                        fill: #c7b299;
+                        transition: fill 150ms ease-out,
+                                    transform 150ms ease-out;
+                    }
+
+                    &:hover &_txt {
+                        margin-right: 20px;
+                        transform: scale(1.2);
+                        color: #ffffff;
+                    }
+
+                    &:hover &_svg {
+                        fill: #ffffff;
+                        transform: scale(1.2);
+                    }
+
+                    &:active &_txt {
+                        margin-right: 10px;
+                        transform: none;
+                        color: #c7b299;
+                    }
+
+                    &:active &_svg {
+                        fill: #c7b299;
+                        transform: none;
+                    }
+                }
+            }
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            &:hover &_img {
+                filter: brightness(40%);
+                transition: filter 150ms ease-out;
+            }
+
+            &:nth-child(2):hover &_img {
+                filter: none;
+            }
+
+            &:hover &_wrapper {
+                background-color: #362f2d;
+
+                &_heading {
+                    color: #c7b299;
+                }
+
+                &_txt {
+                    color: #ffffff;
+                }
+
+
+            }
+        }
+    }
+
+    &_btns {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+
+        &_btn {
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            fill: #c7b299;
+
+            &:hover {
+                transform: scale(1.3);
+            }
+
+            &:active {
+                transform: none;
+            }
+
+            &:nth-child(1) {
+                margin-right: 4px;
+                transition: margin-right 150ms ease-out,
+                            transform 150ms ease-out;
+
+                &:hover {
+                    margin-right: 8px;
+                }
+            }
+
+            &:nth-child(2) {
+                margin-left: 4px;
+                transition: margin-left 150ms ease-out,
+                            transform 150ms ease-out;
+
+                &:hover {
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+}
