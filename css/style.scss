@@ -1066,20 +1066,12 @@ body {
                 margin-right: 4px;
                 transition: margin-right 150ms ease-out,
                             transform 150ms ease-out;
-
-                &:hover {
-                    margin-right: 8px;
-                }
             }
 
             &:nth-child(2) {
                 margin-left: 4px;
                 transition: margin-left 150ms ease-out,
                             transform 150ms ease-out;
-
-                &:hover {
-                    margin-left: 8px;
-                }
             }
         }
     }

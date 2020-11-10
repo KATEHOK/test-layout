@@ -1312,19 +1312,11 @@ body {
   transition: margin-right 150ms ease-out, transform 150ms ease-out, -webkit-transform 150ms ease-out;
 }
 
-.recent_btns_btn:nth-child(1):hover {
-  margin-right: 8px;
-}
-
 .recent_btns_btn:nth-child(2) {
   margin-left: 4px;
   -webkit-transition: margin-left 150ms ease-out, -webkit-transform 150ms ease-out;
   transition: margin-left 150ms ease-out, -webkit-transform 150ms ease-out;
   transition: margin-left 150ms ease-out, transform 150ms ease-out;
   transition: margin-left 150ms ease-out, transform 150ms ease-out, -webkit-transform 150ms ease-out;
-}
-
-.recent_btns_btn:nth-child(2):hover {
-  margin-left: 8px;
 }
 /*# sourceMappingURL=style.css.map */
