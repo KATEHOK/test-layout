@@ -909,28 +909,44 @@ body {
           box-sizing: border-box;
   -webkit-box-shadow: none;
           box-shadow: none;
+  -webkit-transition: background-color 150ms ease-out, border 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: background-color 150ms ease-out, border 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: background-color 150ms ease-out, border 150ms ease-out, transform 150ms ease-out;
+  transition: background-color 150ms ease-out, border 150ms ease-out, transform 150ms ease-out, -webkit-transform 150ms ease-out;
 }
 
 .video_wrapper_btn_svg {
   fill: #ffffff;
+  -webkit-transition: fill 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: fill 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: fill 150ms ease-out, transform 150ms ease-out;
+  transition: fill 150ms ease-out, transform 150ms ease-out, -webkit-transform 150ms ease-out;
 }
 
 .video_wrapper_btn:hover {
   background-color: rgba(0, 0, 0, 0);
   border: 15px solid rgba(0, 0, 0, 0);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .video_wrapper_btn:hover .video_wrapper_btn_svg {
   fill: #c7b299;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .video_wrapper_btn:active {
   background-color: rgba(0, 0, 0, 0.2);
   border: 15px solid rgba(0, 0, 0, 0.02);
+  -webkit-transform: none;
+          transform: none;
 }
 
 .video_wrapper_btn:active .video_wrapper_btn_svg {
   fill: #ffffff;
+  -webkit-transform: none;
+          transform: none;
 }
 
 .video_wrapper_heading {
