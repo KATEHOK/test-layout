@@ -627,6 +627,10 @@ body {
           box-sizing: border-box;
   border: 1px solid #ebebeb;
   border-radius: 3px;
+  -webkit-transition: color 150ms ease-out, background-color 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: color 150ms ease-out, background-color 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: color 150ms ease-out, background-color 150ms ease-out, transform 150ms ease-out;
+  transition: color 150ms ease-out, background-color 150ms ease-out, transform 150ms ease-out, -webkit-transform 150ms ease-out;
 }
 
 .latest_nav_label:nth-child(2) {
@@ -645,11 +649,13 @@ body {
 .latest_nav_label:hover {
   background-color: #998675;
   color: #ffffff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .latest_nav_label:active {
-  color: #8c8c8c;
-  background-color: #ffffff;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .latest_nav_radio {
@@ -677,6 +683,10 @@ body {
   width: 370px;
   margin-bottom: 30px;
   position: relative;
+  -webkit-transition: -webkit-transform 150ms ease-out;
+  transition: -webkit-transform 150ms ease-out;
+  transition: transform 150ms ease-out;
+  transition: transform 150ms ease-out, -webkit-transform 150ms ease-out;
 }
 
 .latest_cards_card:nth-child(4), .latest_cards_card:nth-child(5), .latest_cards_card:nth-child(6) {
@@ -685,6 +695,10 @@ body {
 
 .latest_cards_card_img {
   display: block;
+  -webkit-transition: -webkit-filter 150ms ease-out;
+  transition: -webkit-filter 150ms ease-out;
+  transition: filter 150ms ease-out;
+  transition: filter 150ms ease-out, -webkit-filter 150ms ease-out;
 }
 
 .latest_cards_card:nth-child(2) .latest_cards_card_img {
@@ -704,6 +718,9 @@ body {
           box-sizing: border-box;
   padding: 30px;
   position: relative;
+  background-color: #fff;
+  -webkit-transition: background-color 150ms ease-out;
+  transition: background-color 150ms ease-out;
 }
 
 .latest_cards_card_info_heading {
@@ -712,6 +729,8 @@ body {
   line-height: 1.2;
   font-weight: 500;
   color: #c7b299;
+  -webkit-transition: color 150ms ease-out;
+  transition: color 150ms ease-out;
 }
 
 .latest_cards_card_info_txt {
@@ -720,6 +739,8 @@ body {
   line-height: 20px;
   font-weight: 300;
   color: #d1d1d1;
+  -webkit-transition: color 150ms ease-out;
+  transition: color 150ms ease-out;
 }
 
 .latest_cards_card_info_clip {
@@ -734,6 +755,10 @@ body {
           box-sizing: border-box;
   fill: #ffffff;
   background-color: transparent;
+  -webkit-transition: fill 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: fill 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: fill 150ms ease-out, transform 150ms ease-out;
+  transition: fill 150ms ease-out, transform 150ms ease-out, -webkit-transform 150ms ease-out;
 }
 
 .latest_cards_card_info_loupe {
@@ -748,6 +773,10 @@ body {
           box-sizing: border-box;
   fill: #ffffff;
   background-color: transparent;
+  -webkit-transition: fill 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: fill 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: fill 150ms ease-out, transform 150ms ease-out;
+  transition: fill 150ms ease-out, transform 150ms ease-out, -webkit-transform 150ms ease-out;
 }
 
 .latest_cards_card_info::before {
@@ -760,6 +789,13 @@ body {
   position: absolute;
   top: -20px;
   left: 19px;
+  -webkit-transition: border-bottom 150ms ease-out;
+  transition: border-bottom 150ms ease-out;
+}
+
+.latest_cards_card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .latest_cards_card:hover .latest_cards_card_img {
@@ -794,10 +830,14 @@ body {
 
 .latest_cards_card:hover .latest_cards_card_info_clip:hover, .latest_cards_card:hover .latest_cards_card_info_loupe:hover {
   fill: #c7b299;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .latest_cards_card:hover .latest_cards_card_info_clip:active, .latest_cards_card:hover .latest_cards_card_info_loupe:active {
   fill: #ffffff;
+  -webkit-transform: none;
+          transform: none;
 }
 
 .latest_btn {
@@ -815,14 +855,21 @@ body {
   outline: none;
   background-color: #998675;
   border-radius: 3px;
+  -webkit-transition: opacity 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: opacity 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: transform 150ms ease-out, opacity 150ms ease-out;
+  transition: transform 150ms ease-out, opacity 150ms ease-out, -webkit-transform 150ms ease-out;
 }
 
 .latest_btn:hover {
-  opacity: 0.5;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .latest_btn:active {
-  opacity: 1;
+  opacity: 0.5;
+  -webkit-transform: none;
+          transform: none;
 }
 
 .video {

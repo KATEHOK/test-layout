@@ -496,6 +496,9 @@ body {
             box-sizing: border-box;
             border: 1px solid #ebebeb;
             border-radius: 3px;
+            transition: color 150ms ease-out,
+                        background-color 150ms ease-out,
+                        transform 150ms ease-out;
 
             &:nth-child(2) {
                 width: 70px;
@@ -515,11 +518,11 @@ body {
             &:hover {
                 background-color: #998675;
                 color: #ffffff;
+                transform: scale(1.1);
             }
 
             &:active {
-                color: #8c8c8c;
-                background-color: #ffffff;
+                transform: scale(0.9);
             }
         }
 
@@ -543,6 +546,7 @@ body {
             width: 370px;
             margin-bottom: 30px;
             position: relative;
+            transition: transform 150ms ease-out;
 
             &:nth-child(4),
             &:nth-child(5),
@@ -552,6 +556,7 @@ body {
 
             &_img {
                 display: block;
+                transition: filter 150ms ease-out;
             }
 
             &:nth-child(2) &_img {
@@ -564,6 +569,8 @@ body {
                 box-sizing: border-box;
                 padding: 30px;
                 position: relative;
+                background-color: #fff;
+                transition: background-color 150ms ease-out;
 
                 &_heading {
                     font-family: 'raleway';
@@ -571,6 +578,7 @@ body {
                     line-height: 1.2;
                     font-weight: 500;
                     color: #c7b299;
+                    transition: color 150ms ease-out;
                 }
 
                 &_txt {
@@ -579,6 +587,7 @@ body {
                     line-height: 20px;
                     font-weight: 300;
                     color: #d1d1d1;
+                    transition: color 150ms ease-out;
                 }
 
                 &_clip {
@@ -592,6 +601,8 @@ body {
                     box-sizing: border-box;
                     fill: #ffffff;
                     background-color: transparent;
+                    transition: fill 150ms ease-out,
+                                transform 150ms ease-out;
                 }
 
                 &_loupe {
@@ -605,6 +616,8 @@ body {
                     box-sizing: border-box;
                     fill: #ffffff;
                     background-color: transparent;
+                    transition: fill 150ms ease-out,
+                                transform 150ms ease-out;
                 }
 
                 &::before {
@@ -616,7 +629,12 @@ body {
                     position: absolute;
                     top: -20px;
                     left: 19px;
+                    transition: border-bottom 150ms ease-out;
                 }
+            }
+
+            &:hover {
+                transform: scale(1.1);
             }
 
             &:hover &_img {
@@ -648,10 +666,12 @@ body {
 
                     &:hover {
                         fill: #c7b299;
+                        transform: scale(1.5);
                     }
 
                     &:active {
                         fill: #ffffff;
+                        transform: none;
                     }
                 }
             }
@@ -672,13 +692,16 @@ body {
         outline: none;
         background-color: #998675;
         border-radius: 3px;
+        transition: transform 150ms ease-out,
+                    opacity 150ms ease-out;
 
         &:hover {
-            opacity: 0.5;
+            transform: scale(1.5);
         }
 
         &:active {
-            opacity: 1;
+            opacity: 0.5;
+            transform: none;
         }
     }
 }
