@@ -197,13 +197,12 @@ body {
 .header_top_wrapper_btns_search:focus {
   position: absolute;
   top: 36px;
-  right: 0px;
+  right: 54px;
   color: #c7b299;
   width: 720px;
   -webkit-transition: width 750ms ease-out;
   transition: width 750ms ease-out;
   background-position: right;
-  margin-left: 28px;
   border: 1px solid rgba(199, 178, 153, 0.5);
   background-image: url(../img/icon_search-act.svg);
   border-radius: 10px;
@@ -1793,6 +1792,7 @@ body {
   }
   .header_top_wrapper_btns_search:focus {
     width: 100%;
+    right: 0px;
   }
   .header_bottom {
     display: none;

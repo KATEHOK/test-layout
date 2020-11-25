@@ -147,12 +147,11 @@ body {
                     &:focus {
                         position: absolute;
                         top: 36px;
-                        right: 0px;
+                        right: 54px;
                         color: #c7b299;
                         width: 720px;
                         transition: width 750ms ease-out;
                         background-position: right;
-                        margin-left: 28px;
                         border: 1px solid rgba(#c7b299, 0.5);
                         background-image: url(../img/icon_search-act.svg);
                         border-radius: 10px;
@@ -1502,6 +1501,7 @@ body {
 
                         &:focus {
                             width: 100%;
+                            right: 0px;
                         }
                     }
                 }
