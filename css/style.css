@@ -1800,14 +1800,14 @@ body {
   .cards {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 10px;
+    padding: 10px 0;
   }
   .cards_card {
     width: 45%;
   }
   .cards_card:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
   .cards_card:nth-child(2) .cards_card_heading {
     margin-top: 39px;
