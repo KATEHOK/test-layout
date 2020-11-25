@@ -1512,4 +1512,36 @@ body {
             display: none;
         }
     }
+
+    .cards {
+        flex-wrap: wrap;
+        padding: 10px;
+
+        &_card {
+            width: 45%;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            &:nth-child(2) {
+
+                & .cards_card_heading {
+                    margin-top: 39px;
+                }
+            }
+
+            &:nth-child(4) {
+
+                & .cards_card_heading {
+                    margin-top: 38px;
+                }
+            }
+
+            &:nth-child(1),
+            &:nth-child(2) {
+                margin-bottom: 40px;
+            }
+        }
+    }
 }

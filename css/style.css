@@ -1797,5 +1797,26 @@ body {
   .header_bottom {
     display: none;
   }
+  .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 10px;
+  }
+  .cards_card {
+    width: 45%;
+  }
+  .cards_card:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .cards_card:nth-child(2) .cards_card_heading {
+    margin-top: 39px;
+  }
+  .cards_card:nth-child(4) .cards_card_heading {
+    margin-top: 38px;
+  }
+  .cards_card:nth-child(1), .cards_card:nth-child(2) {
+    margin-bottom: 40px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
