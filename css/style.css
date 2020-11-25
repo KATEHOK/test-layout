@@ -427,8 +427,8 @@ body {
 
 .cards_card:hover {
   fill: #c7b299;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .cards_card:hover .cards_card_heading {
