@@ -46,6 +46,7 @@ body {
 }
 
 .header_top_logo {
+  outline: none;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,7 +67,7 @@ body {
   transition: color 150ms ease-out, fill 150ms ease-out, transform  150ms ease-out, -webkit-transform  150ms ease-out;
 }
 
-.header_top_logo:hover {
+.header_top_logo:hover, .header_top_logo:focus {
   color: #c7b299;
   fill: #c7b299;
   -webkit-transform: scale(1.2);
@@ -372,6 +373,7 @@ body {
 }
 
 .cards_card {
+  outline: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,17 +427,19 @@ body {
   transition: background-color 150ms ease-out;
 }
 
-.cards_card:hover {
+.cards_card:hover, .cards_card:focus {
   fill: #c7b299;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
 }
 
-.cards_card:hover .cards_card_heading {
+.cards_card:hover .cards_card_heading,
+.cards_card:focus .cards_card_heading {
   color: #c7b299;
 }
 
-.cards_card:hover .cards_card_line {
+.cards_card:hover .cards_card_line,
+.cards_card:focus .cards_card_line {
   background-color: #c7b299;
 }
 
@@ -1660,7 +1664,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .header_top_logo:hover {
+  .header_top_logo:hover, .header_top_logo:focus {
     -webkit-transform: none;
             transform: none;
   }
@@ -1805,7 +1809,7 @@ body {
   .cards_card {
     width: 45%;
   }
-  .cards_card:hover {
+  .cards_card:hover, .cards_card:focus {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
   }
@@ -1817,6 +1821,47 @@ body {
   }
   .cards_card:nth-child(1), .cards_card:nth-child(2) {
     margin-bottom: 40px;
+  }
+  .realization {
+    display: none;
+  }
+  .multipurpose {
+    display: none;
+  }
+  .latest {
+    padding-top: 65px;
+  }
+  .latest_txt {
+    width: 100%;
+  }
+  .latest_btns {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .latest_btns_btn:hover, .latest_btns_btn:focus {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .latest_btns_btn:nth-child(5), .latest_btns_btn:nth-child(4) {
+    margin-top: 10px;
+  }
+  .latest_cards_card:nth-child(4), .latest_cards_card:nth-child(5) {
+    margin-bottom: 30px;
+  }
+  .latest_cards_card:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .latest_btn:hover, .latest_btn:focus {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .latest_btn:active {
+    -webkit-transform: none;
+            transform: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

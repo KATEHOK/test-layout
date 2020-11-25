@@ -34,6 +34,7 @@ body {
         align-items: center;
 
         &_logo {
+            outline: none;
             text-decoration: none;
             display: flex;
             align-items: center;
@@ -48,7 +49,8 @@ body {
                         fill 150ms ease-out,
                         transform  150ms ease-out;
 
-            &:hover {
+            &:hover,
+            &:focus {
                 color: #c7b299;
                 fill: #c7b299;
                 transform: scale(1.2);
@@ -282,6 +284,7 @@ body {
     box-sizing: border-box;
         
     &_card {
+        outline: none;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -324,16 +327,19 @@ body {
             transition: background-color 150ms ease-out;
         }
 
-        &:hover {
+        &:hover,
+        &:focus {
             fill: #c7b299;
             transform: scale(1.3);
         }
 
-        &:hover &_heading {
+        &:hover &_heading,
+        &:focus &_heading {
             color: #c7b299;
         }
 
-        &:hover &_line {
+        &:hover &_line,
+        &:focus &_line {
             background-color: #c7b299;
         }
 
@@ -1363,8 +1369,12 @@ body {
         &_top {
             flex-direction: column;
 
-            &_logo:hover {
-                transform: none;
+            &_logo {
+
+                &:hover,
+                &:focus {
+                    transform: none;
+                }
             }
 
             &_wrapper {
@@ -1520,7 +1530,8 @@ body {
         &_card {
             width: 45%;
 
-            &:hover {
+            &:hover,
+            &:focus {
                 transform: scale(1.05);
             }
 
@@ -1541,6 +1552,67 @@ body {
             &:nth-child(1),
             &:nth-child(2) {
                 margin-bottom: 40px;
+            }
+        }
+    }
+
+    .realization {
+        display: none;
+    }
+
+    .multipurpose {
+        display: none;
+    }
+
+    .latest {
+        padding-top: 65px;
+
+        &_txt {
+            width: 100%;
+        }
+
+        &_btns {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &_btn {
+
+                &:hover,
+                &:focus {
+                    transform: scale(1.05);
+                }
+
+                &:nth-child(5),
+                &:nth-child(4) {
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        &_cards {
+
+            &_card {
+
+                &:nth-child(4),
+                &:nth-child(5) {
+                    margin-bottom: 30px;
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+
+        &_btn {
+
+            &:hover,
+            &:focus {
+                transform: scale(1.1);
+            }
+
+            &:active {
+                transform: none;
             }
         }
     }
