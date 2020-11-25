@@ -866,8 +866,8 @@ body {
 }
 
 .latest_btn:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .latest_btn:active {
