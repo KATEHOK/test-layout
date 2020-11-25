@@ -662,8 +662,8 @@ body {
 .latest_btns_btn:hover, .latest_btns_btn:focus {
   background-color: #998675;
   color: #ffffff;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .latest_btns_btn:active {
