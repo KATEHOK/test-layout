@@ -1829,7 +1829,7 @@ body {
     display: none;
   }
   .latest {
-    padding-top: 65px;
+    padding: 65px 0 0;
   }
   .latest_txt {
     width: 100%;
@@ -1862,6 +1862,23 @@ body {
   .latest_btn:active {
     -webkit-transform: none;
             transform: none;
+  }
+  .video_video {
+    width: 100%;
+    height: auto;
+  }
+  .video_wrapper {
+    width: 100%;
+    left: 0px;
+    top: 5px;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  .video_wrapper_heading {
+    margin: 22px 0 15px;
+  }
+  .video_wrapper_txt {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1565,7 +1565,7 @@ body {
     }
 
     .latest {
-        padding-top: 65px;
+        padding: 65px 0 0;
 
         &_txt {
             width: 100%;
@@ -1613,6 +1613,29 @@ body {
 
             &:active {
                 transform: none;
+            }
+        }
+    }
+
+    .video {
+
+        &_video {
+            width: 100%;
+            height: auto;
+        }
+
+        &_wrapper {
+            width: 100%;
+            left: 0px;
+            top: 5px;
+            transform: scale(0.5);
+
+            &_heading {
+                margin: 22px 0 15px;
+            }
+
+            &_txt {
+                margin-bottom: 20px;
             }
         }
     }
