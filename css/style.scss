@@ -1681,22 +1681,23 @@ body {
             }
 
             &_txt {
-                margin: 15px 0 15px;
+                margin: 15px 0 20px;
                 font-size: 14px;
                 line-height: 20px;
             }
 
             &_img {
                 display: block;
-                width: 30%;
+                width: 40%;
                 height: auto;
                 align-self: flex-start;
             }
 
             &_list {
-                width: 70%;
+                width: 60%;
 
                 &_item {
+                    padding-left: 20px;
 
                     &_svg {
                         margin-right: 10px;

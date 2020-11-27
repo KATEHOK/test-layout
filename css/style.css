@@ -1917,19 +1917,22 @@ body {
     line-height: 1;
   }
   .formobile_wrapper_txt {
-    margin: 15px 0 15px;
+    margin: 15px 0 20px;
     font-size: 14px;
     line-height: 20px;
   }
   .formobile_wrapper_img {
     display: block;
-    width: 30%;
+    width: 40%;
     height: auto;
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
   .formobile_wrapper_list {
-    width: 70%;
+    width: 60%;
+  }
+  .formobile_wrapper_list_item {
+    padding-left: 20px;
   }
   .formobile_wrapper_list_item_svg {
     margin-right: 10px;
