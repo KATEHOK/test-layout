@@ -834,6 +834,10 @@ body {
             color: #8c8c8c;
         }
 
+        &_img {
+            display: none;
+        }
+
         &_list {
             margin: 0;
             padding: 0;
@@ -1529,10 +1533,24 @@ body {
 
     .cards {
         flex-wrap: wrap;
-        padding: 10px 0;
+        padding: 15px 0;
 
         &_card {
             width: 45%;
+
+            &_heading {
+                margin-top: 15px;
+                margin-bottom: 10px;
+            }
+
+            &_txt {
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            &_line {
+                margin-top: 15px;
+            }
 
             &:hover,
             &:focus {
@@ -1542,14 +1560,14 @@ body {
             &:nth-child(2) {
 
                 & .cards_card_heading {
-                    margin-top: 39px;
+                    margin-top: 24px;
                 }
             }
 
             &:nth-child(4) {
 
                 & .cards_card_heading {
-                    margin-top: 38px;
+                    margin-top: 23px;
                 }
             }
 
@@ -1573,6 +1591,9 @@ body {
 
         &_txt {
             width: 100%;
+            font-size: 14px;
+            line-height: 20px;
+            margin: 12px 0 20px;
         }
 
         &_btns {
@@ -1640,6 +1661,57 @@ body {
 
             &_txt {
                 margin-bottom: 20px;
+            }
+        }
+    }
+
+    .formobile {
+
+        &_img {
+            display: none;
+        }
+
+        &_wrapper {
+            display: flex;
+            flex-wrap: wrap;
+
+            &_heading {
+                font-size: 26px;
+                line-height: 1;
+            }
+
+            &_txt {
+                margin: 15px 0 15px;
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            &_img {
+                display: block;
+                width: 30%;
+                height: auto;
+                align-self: flex-start;
+            }
+
+            &_list {
+                width: 70%;
+
+                &_item {
+
+                    &_svg {
+                        margin-right: 10px;
+                        align-self: flex-start;
+                        min-width: 16px;
+                        min-height: 16px;
+                        max-width: 16px;
+                        max-height: 16px;
+                    }
+
+                    &_txt {
+                        line-height: 16px;
+                        font-size: 10px;
+                    }
+                }
             }
         }
     }

@@ -1024,6 +1024,10 @@ body {
   color: #8c8c8c;
 }
 
+.formobile_wrapper_img {
+  display: none;
+}
+
 .formobile_wrapper_list {
   margin: 0;
   padding: 0;
@@ -1808,20 +1812,31 @@ body {
   .cards {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 10px 0;
+    padding: 15px 0;
   }
   .cards_card {
     width: 45%;
+  }
+  .cards_card_heading {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  .cards_card_txt {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .cards_card_line {
+    margin-top: 15px;
   }
   .cards_card:hover, .cards_card:focus {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
   }
   .cards_card:nth-child(2) .cards_card_heading {
-    margin-top: 39px;
+    margin-top: 24px;
   }
   .cards_card:nth-child(4) .cards_card_heading {
-    margin-top: 38px;
+    margin-top: 23px;
   }
   .cards_card:nth-child(1), .cards_card:nth-child(2) {
     margin-bottom: 40px;
@@ -1837,6 +1852,9 @@ body {
   }
   .latest_txt {
     width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 12px 0 20px;
   }
   .latest_btns {
     -ms-flex-wrap: wrap;
@@ -1883,6 +1901,48 @@ body {
   }
   .video_wrapper_txt {
     margin-bottom: 20px;
+  }
+  .formobile_img {
+    display: none;
+  }
+  .formobile_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .formobile_wrapper_heading {
+    font-size: 26px;
+    line-height: 1;
+  }
+  .formobile_wrapper_txt {
+    margin: 15px 0 15px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .formobile_wrapper_img {
+    display: block;
+    width: 30%;
+    height: auto;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .formobile_wrapper_list {
+    width: 70%;
+  }
+  .formobile_wrapper_list_item_svg {
+    margin-right: 10px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    min-width: 16px;
+    min-height: 16px;
+    max-width: 16px;
+    max-height: 16px;
+  }
+  .formobile_wrapper_list_item_txt {
+    line-height: 16px;
+    font-size: 10px;
   }
 }
 
