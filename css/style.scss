@@ -1728,6 +1728,41 @@ body {
             }
         }
     }
+
+    .recent {
+        padding: 20px;
+        
+        &_heading {
+            font-size: 26px;
+            line-height: 1;
+        }
+
+        &_txt {
+            width: 100%;
+            font-size: 14px;
+            line-height: 20px;
+            margin: 10px 0 15px;
+        }
+
+        &_cards {
+            flex-direction: column;
+            align-items: center;
+
+            &_card {
+                margin-bottom: 16px;
+
+                &:hover {
+                    transform: none;
+                }
+            }
+        }
+
+        &_btns {
+            margin-top: 0;
+            
+            &_btn {}
+        }
+    }
 }
 
 @media (max-width: 495px) {
