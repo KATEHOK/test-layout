@@ -1716,6 +1716,18 @@ body {
             }
         }
     }
+
+    .statistics {
+        padding: 0;
+
+        &_cards {
+            flex-wrap: wrap;
+
+            &_card {
+                transform: scale(0.7);
+            }
+        }
+    }
 }
 
 @media (max-width: 495px) {
