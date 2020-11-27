@@ -1617,6 +1617,8 @@ body {
         &_cards {
 
             &_card {
+                transform: scale(0.9);
+                margin: 0;
 
                 &:nth-child(4),
                 &:nth-child(5) {
@@ -1624,7 +1626,7 @@ body {
                 }
 
                 &:hover {
-                    transform: scale(1.05);
+                    transform: scale(0.9);
                 }
             }
         }

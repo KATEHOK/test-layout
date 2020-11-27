@@ -1870,12 +1870,17 @@ body {
   .latest_btns_btn:nth-child(5), .latest_btns_btn:nth-child(4) {
     margin-top: 10px;
   }
+  .latest_cards_card {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    margin: 0;
+  }
   .latest_cards_card:nth-child(4), .latest_cards_card:nth-child(5) {
     margin-bottom: 30px;
   }
   .latest_cards_card:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   .latest_btn:hover, .latest_btn:focus {
     -webkit-transform: scale(1.1);
