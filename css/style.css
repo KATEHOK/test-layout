@@ -1981,11 +1981,13 @@ body {
             align-items: center;
   }
   .recent_cards_card {
-    margin-bottom: 16px;
+    margin: 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   .recent_cards_card:hover {
-    -webkit-transform: none;
-            transform: none;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   .recent_btns {
     margin-top: 0;

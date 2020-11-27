@@ -1749,10 +1749,11 @@ body {
             align-items: center;
 
             &_card {
-                margin-bottom: 16px;
+                margin: 0;
+                transform: scale(0.9);
 
                 &:hover {
-                    transform: none;
+                    transform: scale(0.9);
                 }
             }
         }
