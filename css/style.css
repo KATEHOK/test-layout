@@ -2035,6 +2035,10 @@ body {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
+  .partners_wrapper_partner:active {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
 }
 
 @media (max-width: 495px) {
